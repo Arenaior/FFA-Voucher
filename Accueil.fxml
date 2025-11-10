@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #122c40;" />
+      <Hyperlink layoutX="62.0" layoutY="96.0" prefHeight="44.0" prefWidth="117.0" text="Demandes" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="62.0" layoutY="142.0" prefHeight="44.0" prefWidth="117.0" text="Transaction" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="62.0" layoutY="188.0" prefHeight="44.0" prefWidth="94.0" text="Hyperlink" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="63.0" layoutY="236.0" prefHeight="44.0" prefWidth="117.0" text="Parametres" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

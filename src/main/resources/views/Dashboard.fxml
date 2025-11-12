@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox prefHeight="612.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <SplitPane dividerPositions="0.2505567928730512, 0.7505567928730512" focusTraversable="true" prefHeight="865.0" prefWidth="946.0" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane styleClass="menu-item" stylesheets="@style.css">
+          <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="MENU" textAlignment="CENTER" wrapText="false">
+              <font>
+                <Font size="18.0" fx:id="x1" />
+              </font>
+              <textFill>
+                <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
+              </textFill>
+            </Label>
+                  <ScrollPane layoutX="15.0" layoutY="43.0" prefHeight="557.0" prefWidth="200.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="472.0" prefWidth="200.0">
+                           <children>
+                              <Hyperlink layoutX="15.0" layoutY="8.0" prefHeight="24.0" prefWidth="169.0" text="Vue d'ensemble" />
+                              <Hyperlink layoutX="15.0" layoutY="64.0" prefHeight="24.0" prefWidth="169.0" text="Listes des demandes" />
+                              <Hyperlink layoutX="17.0" layoutY="271.0" prefHeight="24.0" prefWidth="169.0" text="Ajouter " />
+                              <Hyperlink layoutX="17.0" layoutY="299.0" prefHeight="24.0" prefWidth="169.0" text="Modifier / Suprimmer" />
+                              <Label layoutX="17.0" layoutY="245.0" prefHeight="26.0" prefWidth="178.0" text="Gestion utilisateurs" textFill="#c1b7b7">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="99.0" prefHeight="26.0" prefWidth="178.0" text="Gestion vouchers" textFill="#c1b7b7">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Hyperlink layoutX="17.0" layoutY="125.0" prefHeight="24.0" prefWidth="169.0" text="Initier" />
+                              <Hyperlink layoutX="17.0" layoutY="209.0" prefHeight="24.0" prefWidth="169.0" text="Modifier / Suprimmer" />
+                              <Hyperlink layoutX="17.0" layoutY="153.0" prefHeight="24.0" prefWidth="169.0" text="Valider" />
+                              <Hyperlink layoutX="17.0" layoutY="181.0" prefHeight="24.0" prefWidth="169.0" text="Proceder au paiement " />
+                              <Hyperlink layoutX="16.0" layoutY="36.0" prefHeight="24.0" prefWidth="169.0" text="Messagerie" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+          </children>
+        </AnchorPane>
+        <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
+          <content>
+            <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="611.0" prefWidth="465.0" style="-fx-color: white;" styleClass="anchorpane-content" stylesheets="@style.css">
+                     <children>
+                        <Label id="text" layoutX="151.0" layoutY="14.0" prefHeight="30.0" prefWidth="163.0" stylesheets="@style.css" text="Ajout utilisateur" textOverrun="CLIP">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="33.0" layoutY="44.0" prefHeight="541.0" prefWidth="398.0">
+                           <children>
+                              <TextField layoutX="24.0" layoutY="14.0" prefHeight="26.0" prefWidth="170.0" promptText="Nom" />
+                              <TextField layoutX="224.0" layoutY="14.0" promptText="Prenom" />
+                              <TextField layoutX="23.0" layoutY="80.0" prefHeight="26.0" prefWidth="170.0" promptText="Adresse email" />
+                              <TextField layoutX="23.0" layoutY="147.0" prefHeight="26.0" prefWidth="170.0" promptText="Nom d'utilisateur" />
+                              <TextField layoutX="24.0" layoutY="216.0" prefHeight="26.0" prefWidth="170.0" promptText="Creer un mot de passe " />
+                              <TextField layoutX="24.0" layoutY="284.0" prefHeight="26.0" prefWidth="170.0" promptText="Confirmer le mot de passe " />
+                              <Pane layoutX="224.0" layoutY="73.0" prefHeight="200.0" prefWidth="151.0" styleClass="pane-checkbox" stylesheets="@style.css">
+                                 <children>
+                                    <MenuButton accessibleRole="CONTEXT_MENU" layoutX="21.0" layoutY="109.0" mnemonicParsing="false" text="Selectionner">
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" text="Initiateur" />
+                                        <MenuItem mnemonicParsing="false" text="Approuveur" />
+                                      </items>
+                                    </MenuButton>
+                                    <Label id="text" layoutX="48.0" layoutY="61.0" prefHeight="39.0" prefWidth="54.0" text="Rôle" textFill="WHITE">
+                                       <font>
+                                          <Font size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              
+                           </children>
+                        </AnchorPane>
+                     </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+        <AnchorPane prefHeight="611.0" prefWidth="158.0">
+          <children>
+            <Label alignment="CENTER" font="$x1" layoutX="14.0" layoutY="14.0" style="&#10;" text="Details" textAlignment="CENTER" textFill="WHITE" wrapText="false" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" styleClass="body" stylesheets="@style.css" />
+  </children>
+</VBox>
